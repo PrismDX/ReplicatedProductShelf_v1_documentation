@@ -22,7 +22,7 @@
 
 
 # Setup:
-Add BP_ProductCharacterComponent to your player character and you should be good to go.
+Add BP_ProductCharacterComponent to your player character and you should be good to go (I recommend to turn on debug mode in the product character component for some feedback until you integrate your notification UI).
 
 Inputs can be changed at BP_ProductCharacterComponent -> input graph.
 
