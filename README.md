@@ -38,15 +38,21 @@ Inputs can be changed at BP_ProductCharacterComponent -> input graph.
 
 This component handles most of the interaction replication and inputs such as Pick up/drop product crate and add/remove from shelf.
 
+	Variable Info soon
+
 ---
 ### BP_ProductCrate
 
 This blueprint is the product crate that the player is holding which contains product info and product count. This is used to put products in the product shelf aswell as remove them and add it to the product crate.
 
+	Variable Info soon
+
 ---
 ### BP_PriceTag
 
 This blueprint is an actor which contains a text component used to display the price of the product in shelf ( currently takes price from the product crate)
+
+	Variable Info soon
 
 ---
 ### BP_ProductSlot
@@ -59,6 +65,10 @@ I recommend that you create a blueprint that will act as a shelf (static mesh) w
 
 Max product count in the shelf slot is calculated by the product mesh size (mesh bounds) + the active spacing between products you use, so bigger products = less space and smaller = more.
 
+Simply just scale the actor for more space and it will update accordingly
+
+	Variable Info soon
+
 
 
 ---
@@ -66,6 +76,6 @@ Max product count in the shelf slot is calculated by the product mesh size (mesh
 
 # Replication
 
-Coming soon
+	information coming soon
 
 ---
