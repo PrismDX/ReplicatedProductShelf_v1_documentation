@@ -22,7 +22,9 @@
 
 
 # Setup:
-Add BP_ProductCharacterComponent to your player character and you should be good to go (I recommend to turn on debug mode in the product character component for some feedback until you integrate your notification UI).
+Add BP_ProductCharacterComponent to your player character and you should be good to go 
+
+I recommend to turn on debug mode in the product character component for some feedback and aiming until you integrate your notification UI and crosshair
 
 Inputs can be changed at BP_ProductCharacterComponent -> input graph.
 
@@ -60,4 +62,10 @@ Max product count in the shelf slot is calculated by the product mesh size (mesh
 
 
 ---
-#
+
+
+# Replication
+
+Coming soon
+
+---
