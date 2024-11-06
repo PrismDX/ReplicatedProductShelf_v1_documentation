@@ -82,6 +82,8 @@ This map uses an example character which is essentially just a First person char
 
 This component handles most of the interaction replication and inputs such as Pick up/drop product crate and add/remove from shelf.
 
+UI Notifications can be setup in the On_Notify function in this component located here: BP_ProductCharacterComponent -> FUNCTIONS -> Product Component -> Actions -> On_Notify  assuming you have UI/Widget for notfications.
+
 #
 **Variables:**
 
