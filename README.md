@@ -126,6 +126,8 @@ Max product count in the shelf slot is calculated by the product mesh size (mesh
 
 Simply just scale the actor for more space and it will update accordingly
 
+Products added to a shelf is also assigned random rotation depending on the Rotation range ( *Product Info* ) to make it more inconsistent with product placement.
+
 #
 **Variables:**
 
