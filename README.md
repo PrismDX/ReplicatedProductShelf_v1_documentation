@@ -20,6 +20,28 @@
 
 ---
 
+# Features
+
+
+- Shelf slot blueprint which calculates max products depending on mesh size and spacing between the products.
+
+- Add / Remove products from shelf slot using a product crate.
+
+- Adds products in direction of X Y And Z if you allow it to be stackable.
+
+- Center products to look perfect in the shelf slot.
+
+- Random rotation for products in shelf within specified range for each product.
+
+- Instanced static mesh for shelf slot.
+
+- Error notifications ready for your notification UI.
+
+- Multiplayer -> Replicated Works on Standalone/Server/Client.
+
+- Showcase map showing most of the features.
+
+---
 
 # Setup:
  
