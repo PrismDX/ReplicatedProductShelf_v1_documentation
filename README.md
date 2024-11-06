@@ -138,6 +138,7 @@ Simply just scale the actor for more space and it will update accordingly
 	This enables debug mode which will alow you to see the surface area and bounds used to calculate shelf size as well as debug messages using print string. Instanced static mesh position is also indicated by the white arrow.
 	
 - **Price Tags (Array *BP_PriceTag* reference)**: 
+	
 	This allows you add and select multiple *BP_PriceTag* blueprints from the world using the picker tool to connect it to the product shelf so the product shelf can update the text value in *BP_PriceTag* when the first product is added to the shelf.
 
 - **Spring Effect (bool)**: 
@@ -163,7 +164,8 @@ Simply just scale the actor for more space and it will update accordingly
 
 
 # Product Info Structure
-	
+Product info for the products.
+#
 **Variables:**
 
 - **Mesh (Static mesh)**: 
@@ -191,6 +193,7 @@ Simply just scale the actor for more space and it will update accordingly
 	Random rotation range for products when they are in shelf. X = min rotation, Y Max rotation.
 
 - **ZMultiply (float)**:
+	
 	This is used to fine tune if pivot point is at the center of product on the Z Axis.
 
 - **Product Spacing (Vector2D)**:
