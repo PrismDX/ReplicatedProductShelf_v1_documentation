@@ -60,6 +60,12 @@
 
 ---
 
+# Recommended mesh setup
+
+Product mesh should have its pivot point centered for X and Y, and ideally Z at the bottom of the mesh to prevent any unintended results. If the pivot point for Z is not at the bottom, you can  offset the mesh using the ZMultiply found in the product info structure. ZMultiply should never be 0!
+
+---
+
 # How it works
 
 This works by picking up a product crate ( *BP_ProductCrate* ) using the character component added to your player character ( *BP_ProductCharacterComponent* ). When you are carrying a product crate, you will be able to interact with the product shelves ( *BP_ProductSlot* ) by adding and removing products to it.
@@ -227,3 +233,4 @@ Product info for the products.
 	This is used in shelf if UseProductSpacing is enabled on the shelf slot.
 
 ---
+
