@@ -179,7 +179,9 @@ Products added to a shelf is also assigned random rotation depending on the Rota
 	
 	This determines how fast the interpolation happens if SpringEffect(bool) is enabled.
 
-
+-  <s> **Price Tags (Array *BP_PriceTag* reference)**: 
+    
+   <s> This allows you add and select multiple *BP_PriceTag* blueprints from the world using the picker tool to connect it to the product shelf so the product shelf can update the text value in *BP_PriceTag* when the first product is added to the shelf.
 
 - **Use spacing from product (bool)**:
 
