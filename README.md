@@ -1,4 +1,4 @@
-# ReplicatedProductShelf_v1_documentation
+# ReplicatedProductShelf_v1_documentation / Changelog
 
 
 # Contents
@@ -141,7 +141,7 @@ This blueprint is the product crate that the player is holding which contains pr
 ---
 ### BP_PriceTag
 
-This blueprint is an actor which contains a text component used to display the price of the product in shelf ( currently takes price from the product crate )
+This blueprint is an actor which contains a text component used to display the price of the product in shelf ( currently takes price from the product crate ) Change behaviour in BP_ProductSlot. Position and rotation is controlled in BP_ProductSlot, see Variables.
 
 ---
 ### BP_ProductSlot
@@ -169,9 +169,7 @@ Products added to a shelf is also assigned random rotation depending on the Rota
 
 	This enables debug mode which will alow you to see the surface area and bounds used to calculate shelf size as well as debug messages using print string. Instanced static mesh position is also indicated by the white arrow.
 	
-- **Price Tags (Array *BP_PriceTag* reference)**: 
-	
-	This allows you add and select multiple *BP_PriceTag* blueprints from the world using the picker tool to connect it to the product shelf so the product shelf can update the text value in *BP_PriceTag* when the first product is added to the shelf.
+
 
 - **Spring Effect (bool)**: 
 
@@ -181,14 +179,24 @@ Products added to a shelf is also assigned random rotation depending on the Rota
 	
 	This determines how fast the interpolation happens if SpringEffect(bool) is enabled.
 
+
+
 - **Use spacing from product (bool)**:
 
 	When enabled, this will use the spacing value that is in the product info of the product you are adding to the shelf. This spacing value will be added between the products in the shelf.
 
 - **Shelf product spacing (Vector2D)**:
 
-	This is the spacing value for X and Y when placing products. This only works when *use spacing from product* is disabled
+	This is the spacing value for X and Y when placing products. This only works when *use spacing from product* is disabled	
+
+- **bUsePriceTag (bool)**: 	
+
+	When enabled a price tag will be added to the product slot displaying the price of the current product.
 	
+- **Pricetag Offset (Transform)**: 	
+ 
+	This is used to position the price tag relative to the product slot as you cant modify child actors directly when used in a blueprint.
+
 
 
 
@@ -234,3 +242,8 @@ Product info for the products.
 
 ---
 
+# Changelog
+---
+
+### v1.1 - *12. Nov 2024*
+- Moved pricetag to BP_Productslot to avoid any issues and extra setup for price tags when used as a child actor component. limited to 1 price tag for now. See BP_ProductSlot -> Variables for pricetag configuration
