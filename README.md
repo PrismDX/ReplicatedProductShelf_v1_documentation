@@ -138,6 +138,10 @@ This blueprint is the product crate that the player is holding which contains pr
 
 	This contains the information from the Product info structure ( *Struct_ProductInfo* )
 
+- **bUseProductIcon (bool)**: 
+
+	Enable product icon on the product crate, uses icon ( Material instance ) from product info.  See -> ( *Struct_ProductInfo*  )
+
 ---
 ### BP_PriceTag
 
@@ -199,6 +203,11 @@ Products added to a shelf is also assigned random rotation depending on the Rota
  
 	This is used to position the price tag relative to the product slot as you cant modify child actors directly when used in a blueprint.
 
+- **bResetEmptyShelf (bool)**: 	
+ 
+	Enabled by default. Disable this to manually reset shelf and prevent different products to be added even if the shelf is empty.
+
+
 
 
 
@@ -241,5 +250,13 @@ Product info for the products.
 - **Product Spacing (Vector2D)**:
 	
 	This is used in shelf if UseProductSpacing is enabled on the shelf slot.
+
+- **MaxCrateCapacity (Integer)**:
+	
+	Value determines how many products you can fit in a product crate.
+
+- **ProductIcon (Material Instance reference)**:
+	
+	This is the icon / material used as product icon.
 
 ---
