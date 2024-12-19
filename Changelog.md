@@ -1,5 +1,9 @@
 # ReplicatedProductShelf Changelog
 
+### v1.55 - *19. Dec 2024* - Pending on FAB.com
+- New showcase map
+- Added new models and textures for showcase map from https://polyhaven.com ( Under CC0 License - https://polyhaven.com/license 12/19/2024 ).
+---
 ### v1.15 - *27. Nov 2024*
 - Added product crate max capacity to product info ( MaxCrateCapacity )
 - Added Product crate icon to product info ( ProductIcon )
